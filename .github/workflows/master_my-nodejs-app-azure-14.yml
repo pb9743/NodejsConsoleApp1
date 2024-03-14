@@ -60,7 +60,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'my-nodejs-app-azure-14'
+          app-name: 'deply-app'
           slot-name: 'Production'
           package: .
           
