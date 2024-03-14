@@ -35,7 +35,7 @@ jobs:
           path: .
 
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     needs: build
     environment:
       name: 'Production'
@@ -60,7 +60,7 @@ jobs:
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
-          app-name: 'deply-app'
+          app-name: 'my-nodejs-app-azure-14'
           slot-name: 'Production'
           package: .
           
